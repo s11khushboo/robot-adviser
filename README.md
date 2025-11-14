@@ -1,4 +1,4 @@
-# 🧠 Robot Adviser — NLP-Powered Product Review Website
+#  Robot Adviser — NLP-Powered Product Review Website
 
 **Turning noisy customer feedback into clear buying decisions.**
 
@@ -8,8 +8,22 @@ This repository contains the full workflow:
 data preprocessing → model training → evaluation → deployment.
 
 ---
+## Data Folder
 
-## 🚀 Project Goals
+The repository includes a dedicated **`data/`** folder containing:
+
+- The **raw datasets** used as input for the project  
+- The **cleaned CSV files** generated after each preprocessing step  
+- Intermediate datasets:
+  - After noise removal (Model 1)
+  - After clustering assignment (Model 2)
+  - After summary generation metadata (Model 3)
+
+This ensures complete transparency and reproducibility across all stages of the pipeline.
+
+---
+
+##  Project Goals
 
 This project aims to **automate product review analysis** using modern NLP:
 
@@ -24,7 +38,7 @@ This project aims to **automate product review analysis** using modern NLP:
    - buyer-friendly articles  
    - top product recommendations per category  
 
-   ✨ *Only LLMs were used for summarization — no classical techniques.*
+    *Only LLMs were used for summarization — no classical techniques.*
 
 ---
 
@@ -36,7 +50,7 @@ This project aims to **automate product review analysis** using modern NLP:
 
 ---
 
-## 🔍 1. Sentiment Classification (Model 1)
+## 1. Sentiment Classification (Model 1)
 
 **Goal:** predict whether a review is *positive*, *neutral*, or *negative*.
 
@@ -55,7 +69,7 @@ This project aims to **automate product review analysis** using modern NLP:
 
 ---
 
-## 📦 2. Product Clustering (Model 2)
+## 2. Product Clustering (Model 2)
 
 **Goal:** group products into **4–6** meaningful categories.
 
@@ -76,7 +90,7 @@ This project aims to **automate product review analysis** using modern NLP:
 
 ---
 
-## ✨ 3. Review Summarization (Model 3)
+##  3. Review Summarization (Model 3)
 
 **Goal:** transform thousands of reviews into **clear, useful product recommendations**.
 
@@ -95,7 +109,7 @@ This project aims to **automate product review analysis** using modern NLP:
 
 ---
 
-## 🌐 Deployment
+##  Deployment
 
 The models were integrated into a **Streamlit demo website** that enables users to:
 - Upload datasets  
@@ -105,14 +119,15 @@ The models were integrated into a **Streamlit demo website** that enables users 
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```
-├── data/
+├── clean data
+├── data
 ├── notebooks/
-│   ├── model1_sentiment.ipynb
-│   ├── model2_clustering.ipynb
-│   └── model3_summarization.ipynb
+│   ├── m1.ipynb
+│   ├── m2.ipynb
+│   └── m3.ipynb
 ├── models/
 ├── app/
 │   └── streamlit_app.py
@@ -122,7 +137,7 @@ The models were integrated into a **Streamlit demo website** that enables users 
 
 ---
 
-## 👥 Team (Group 5)
+##  Team (Group 5)
 
 - Inna 
 - Adrián  
@@ -131,7 +146,7 @@ The models were integrated into a **Streamlit demo website** that enables users 
 
 ---
 
-## 📌 Key Takeaways
+##  Key Takeaways
 
 - Noise removal (sarcasm + mistakes) significantly improved sentiment classification.  
 - Clustering required tuning metrics and validating cluster stability.  
