@@ -6,6 +6,8 @@ Robot Adviser is an **end-to-end NLP system** that classifies product reviews, c
 
 This repository contains the full workflow:  
 data preprocessing → model training → evaluation → deployment.
+<img width="1895" height="905" alt="image" src="https://github.com/user-attachments/assets/5d6ec750-debf-47c1-ad8a-5d973ddd15fb" />
+
 
 ---
 ## Data Folder
